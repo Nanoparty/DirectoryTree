@@ -7,7 +7,7 @@ A coding challenge completed by Nathan Foote for the Endpoint interview process.
 In order to run the application, run the `directory_app.py` file in the `Endpoint_Coding_Test` directory.
 
 ```
-python Endpoint_Coding_Test.directory_app.py
+python Endpoint_Coding_Test/directory_app.py
 ```
 
 ## User Guide
