@@ -17,6 +17,10 @@ class FileSystem:
         Given directories cannot already exist in the system
         """
 
+        if directory_name.strip == "":
+            print("Invalid directory")
+            return
+
         tokens = directory_name.split("/")
 
         if len(tokens) == 1:
@@ -47,6 +51,18 @@ class FileSystem:
         Source directory must already exist in file system.
         Target directory will be created if it does not already exist.
         """
+
+        if source.strip() == "":
+            print("Invalid source directory")
+            return
+
+        if target.strip() == "":
+            print("Invalid target directory")
+            return
+
+        if source == target:
+            print("Source and Target directories are the same.")
+            return
 
         source_tokens = source.split("/")
         source_parent = None
@@ -87,6 +103,11 @@ class FileSystem:
         Removes a given file directory from the file system.
         Directory must currently exist in the system.
         """
+
+        if directory.strip() == "":
+            print("Invalid directory")
+            return
+
         tokens = directory.split("/")
 
         if len(tokens) == 1:
